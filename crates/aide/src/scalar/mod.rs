@@ -52,7 +52,7 @@
 //!         },
 //!         ..OpenApi::default()
 //!     };
-//! 
+//!
 //!     let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
 //!
 //!     axum::serve(
@@ -68,6 +68,8 @@
 //!     .unwrap();
 //! }
 //! ```
+
+pub mod configuration;
 
 /// A wrapper to embed [Scalar](https://github.com/scalar/scalar) in your app.
 #[must_use]
